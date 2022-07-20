@@ -1,0 +1,319 @@
+/* Common CSS */
+.btn-param {
+    width: 100%;
+}
+
+.row-param {
+    padding: 15px 0;
+}
+
+.header {
+    margin: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
+.header h1 h3 {
+    font-weight: bold;
+}
+
+table th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+table#userChangesTable tr td:first-of-type {
+    text-align: left;
+}
+
+table#userChangesTable tr td {
+    text-align: right;
+}
+
+i:hover {
+  color: blue;
+}
+
+ul.toggleGroup.horizontal{
+    padding: 0 0 0 0px;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    margin: 10px 0 0;
+    line-height: normal;
+    width: 20px;
+    height: 20px;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+/* Home Page Dashboard Template */
+
+.single {
+    text-align: center;
+    border: 1px solid #eee;
+    /*cursor: pointer;*/
+    padding: 10px 0px;
+} 
+
+.single:hover, .single.selected:hover {
+    border: 1px solid #49AEC0;
+    background-color: rgba(240, 240, 240, 0.8);
+}
+
+.single.selected {
+    background-color: rgba(240, 240, 240, 0.4);
+}
+
+.single .value {
+    font-size: 18px;
+    color: #888;
+    font-weight: 300;
+    margin: 10px;
+}
+
+.single .value.primary {
+    font-size: 22px;
+    color: #888;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.single .addin {
+    margin: 10px;
+}
+
+
+.sparklineContainer {
+    margin: 10px 0px;
+}
+
+.clippedTextContainer {
+    margin: 0px 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: rgba(220,220,220,0.8);
+    font-size: 26px;
+    color: #fff;
+}
+
+.addin .bubble {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #eee;
+    border-radius: 100%;
+}
+
+
+.totalSales .sales {
+    text-align: right;
+}
+
+
+.trendArrowContainer .arrow {
+    font-size: 30px;
+}
+
+.hyperlink {
+    margin: 5px 0px;
+}
+
+.template {
+    margin: 20px 0px;
+}
+
+.clippedText {
+    margin: 10px 0px 5px 0px;
+}
+
+
+
+.addin .clippedText {
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+} 
+
+.addin .bubble {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bubbleContainer {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+} 
+
+.addin .trendArrow {
+    text-align: center;
+} 
+
+.col-lg-2 {
+    flex: 0 0 16.66666667%;
+} 
+
+/* Bootstrap Overrides */
+.container {
+    width: 1400px;
+    max-width: 1400px;
+}
+.row {
+    display: block !important;
+}
+.flex-row {
+    display: flex !important;
+}
+table {
+    display: table !important;
+}
+.tab-pane {
+    padding: 20px 10px;
+}
+.tab-content {
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+.nav-tabs .active {
+    font-weight: bold;
+}
+.nav-link {
+    color: black;
+}
+
+
+.header {
+    margin: 20px 0;
+    border-bottom: 1px solid lightgrey;
+}
+.header h1 {
+    font-weight: bold;
+}
+.header .primary-text {
+    font-size: 1.5em;
+}
+.header .secondary-text {
+    float: right;
+    padding-top: 8px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Keep modal behind Pentaho progress overlay */
+.modal {
+    z-index: 999 !important;
+}
+.modal-backdrop {
+    z-index: 998 !important;
+}
+
+/*.flex-row div[class^="col-"] {
+    flex: 1;
+}*/
+.kpi-box {
+    padding: 10px 0 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+.kpi-box.alert {
+    box-shadow: 0 0 6px rgba(255, 0, 0, 0.8);
+}
+.kpi-box.success {
+    box-shadow: 0 0 6px rgba(0, 180, 0, 0.8);
+}
+/*.kpi-box h2 {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
+.kpi-box.clickable:hover {
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.6);
+}
+.kpi-box.clickable.alert:hover {
+    box-shadow: 0 0 16px rgba(255, 0, 0, 0.8);
+}
+.kpi-box.clickable.success:hover {
+    box-shadow: 0 0 16px rgba(0, 180, 0, 0.8);
+}
+
+.kpi-box .icon {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+
+.scorecard-medium {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+.isolatedExcluded {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    font-size: smaller;
+    font-style: italic;
+}
+
+.disclaimer {
+    margin: -40px 0 30px 15px;
+}
+
+.modal-dialog,
+.modal-content {
+    width: 1200px;
+    max-width: 1200px;
+}
+
+.drill-through-table table tbody tr:not(.table-total)
+{
+    cursor: pointer;
+}
+.drill-through-table table tbody tr:not(.table-total):hover > td
+{
+    background-color: rgba(3,169,244, 1) !important;
+} 
+.drill-through-table table tbody tr[role="row"]:not(.table-total)
+{
+    cursor: pointer;
+}
+.drill-through-table table tbody tr[role="row"]:not(.table-total):hover > td
+{
+    background-color: rgba(3,169,244, 1) !important;
+}
+.table-total > td {
+    font-weight: bold !important;
+    border-top-width: 2px !important;
+}
+
+tr.groupHeader.preSpace:first-of-type {
+    display: none;
+}
+tr.groupHeader.preSpace > td {
+    padding: 0px;
+}
+tr.groupHeader.postSpace {
+    display: none;
+}
+
+td.expandingClass {
+    background-color: #d0d0d0 !important;
+} 
+
+.constrained > span {
+    max-width: 95%;
+    width: 95%;
+} 
